@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Footprint.API", "Footprint.API\Footprint.API.csproj", "{78EE9DF8-8A1E-45D1-A7F8-A3F7CA31658D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Footprint.Infrastructure", "Footprint.Infrastructure\Footprint.Infrastructure.csproj", "{F7E8691F-8168-47AE-9294-9AD3A525886A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78EE9DF8-8A1E-45D1-A7F8-A3F7CA31658D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78EE9DF8-8A1E-45D1-A7F8-A3F7CA31658D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78EE9DF8-8A1E-45D1-A7F8-A3F7CA31658D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78EE9DF8-8A1E-45D1-A7F8-A3F7CA31658D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7E8691F-8168-47AE-9294-9AD3A525886A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E8691F-8168-47AE-9294-9AD3A525886A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E8691F-8168-47AE-9294-9AD3A525886A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E8691F-8168-47AE-9294-9AD3A525886A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CE69131-A66A-4BB5-83DF-27FEA185AE80}
+	EndGlobalSection
+EndGlobal
