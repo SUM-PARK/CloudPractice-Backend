@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190826141705_ef-core-config_dung.cs" />
+    <Compile Remove="Migrations\20190826141705_ef-core-config_dung.Designer.cs" />
+    <Compile Remove="Migrations\20190826145346_list-config_coffee-time.cs" />
+    <Compile Remove="Migrations\20190826145346_list-config_coffee-time.Designer.cs" />
+    <Compile Remove="Migrations\20190826151127_list-config_coffee-time2.cs" />
+    <Compile Remove="Migrations\20190826151127_list-config_coffee-time2.Designer.cs" />
+    <Compile Remove="Migrations\20190826151204_list-config_coffee-time2.cs" />
+    <Compile Remove="Migrations\20190826151204_list-config_coffee-time2.Designer.cs" />
+    <Compile Remove="Migrations\20190826151440_list-config_coffee-time2.cs" />
+    <Compile Remove="Migrations\20190826151440_list-config_coffee-time2.Designer.cs" />
+    <Compile Remove="Migrations\20190826153559_owned-type_super-dung.cs" />
+    <Compile Remove="Migrations\20190826153559_owned-type_super-dung.Designer.cs" />
+    <Compile Remove="Migrations\20190826154223_owned-type_morning-dung.cs" />
+    <Compile Remove="Migrations\20190826154223_owned-type_morning-dung.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.11" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.17" />
+  </ItemGroup>
+
+</Project>

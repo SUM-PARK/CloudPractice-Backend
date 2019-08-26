@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Footprint.Infrastructure.Migrations
+namespace Itinere.Infrastructure.Migrations
 {
-    public partial class initialfootprint : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,6 +12,7 @@ namespace Footprint.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
+                    Date = table.Column<DateTime>(nullable: false),
                     Name = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

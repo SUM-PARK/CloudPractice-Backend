@@ -1,11 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 
-namespace Footprint.Infrastructure.Model
+namespace Itinere.Infrastructure.Model
 {
-    public class DailyFootprint
+    public class Footprint
     {
         public string Id { get; set; }
+        public DateTime Date { get; set; }
         public string Name { get; set; }
+
+        public Dung MorningDung { get; set; }
     }
 }

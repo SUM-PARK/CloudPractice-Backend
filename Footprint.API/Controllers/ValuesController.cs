@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Footprint.Infrastructure.Ef;
+using Itinere.Infrastructure.Ef;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Footprint.API.Controllers
+namespace Itinere.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private readonly FootprintDbContext _dbContext;
-        public ValuesController(FootprintDbContext dbContext)
+        private readonly ItinereDbContext _dbContext;
+        public ValuesController(ItinereDbContext dbContext)
         {
             this._dbContext = dbContext;
         }
