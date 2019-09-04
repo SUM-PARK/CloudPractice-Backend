@@ -17,7 +17,6 @@ namespace Itinere.Infrastructure.Ef
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new FootprintConfiguration());
-            //modelBuilder.ApplyConfiguration(new DungConfiguration());
             modelBuilder.ApplyConfiguration(new CoffeeTimeConfiguration());
         }
     }

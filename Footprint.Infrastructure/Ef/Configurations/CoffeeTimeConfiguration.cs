@@ -11,7 +11,8 @@ namespace Itinere.Infrastructure.Ef.Configurations
     {
         public void Configure(EntityTypeBuilder<CoffeeTime> builder)
         {
-            builder.HasKey(o => o.Id);
+            builder.Property<string>("_id").ValueGeneratedOnAdd();
+            builder.HasKey("_id");
         }
     }
 }

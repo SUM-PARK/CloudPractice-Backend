@@ -3,33 +3,22 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Itinere.Infrastructure.Migrations
 {
-    public partial class ownedtype_dung : Migration
+    public partial class coffeetime : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<string>(
-                name: "MorningDung_Description",
-                table: "Footprints",
-                nullable: true);
-
-            migrationBuilder.AddColumn<int>(
-                name: "MorningDung_Solidity",
-                table: "Footprints",
-                nullable: false,
-                defaultValue: 0);
-
             migrationBuilder.CreateTable(
                 name: "CoffeeTime",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
                     With = table.Column<string>(nullable: true),
                     When = table.Column<DateTime>(nullable: false),
-                    FootprintId = table.Column<string>(nullable: true)
+                    FootprintId = table.Column<string>(nullable: true),
+                    _id = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CoffeeTime", x => x.Id);
+                    table.PrimaryKey("PK_CoffeeTime", x => x._id);
                     table.ForeignKey(
                         name: "FK_CoffeeTime_Footprints_FootprintId",
                         column: x => x.FootprintId,
@@ -48,14 +37,6 @@ namespace Itinere.Infrastructure.Migrations
         {
             migrationBuilder.DropTable(
                 name: "CoffeeTime");
-
-            migrationBuilder.DropColumn(
-                name: "MorningDung_Description",
-                table: "Footprints");
-
-            migrationBuilder.DropColumn(
-                name: "MorningDung_Solidity",
-                table: "Footprints");
         }
     }
 }
